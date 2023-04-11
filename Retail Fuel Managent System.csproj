@@ -47,6 +47,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Retail_Fuel_Managent_System.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,11 +76,23 @@
     <Compile Include="CashIn.Designer.cs">
       <DependentUpon>CashIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DayEnd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DayEnd.Designer.cs">
       <DependentUpon>DayEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebtorsTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebtorsTransaction.Designer.cs">
+      <DependentUpon>DebtorsTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -134,6 +149,18 @@
     <Compile Include="UserRegistration.Designer.cs">
       <DependentUpon>UserRegistration.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CashDeclaration.resx">
+      <DependentUpon>CashDeclaration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayEnd.resx">
+      <DependentUpon>DayEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebtorsTransaction.resx">
+      <DependentUpon>DebtorsTransaction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +176,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Retail.resx">
+      <DependentUpon>Retail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserRegistration.resx">
       <DependentUpon>UserRegistration.cs</DependentUpon>
     </EmbeddedResource>
