@@ -16,5 +16,20 @@ namespace Retail_Fuel_Managent_System
         {
             InitializeComponent();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panel2.Width += 3;
+            
+            if (panel2.Width >=599 )
+            {
+                timer1.Stop();
+                LoginForm lg = new LoginForm();
+                lg.Show();
+                this.Hide();
+
+            }
+
+        }
     }
 }
